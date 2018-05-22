@@ -1,4 +1,4 @@
-/* sticky header */
+// sticky header
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
@@ -11,7 +11,7 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-/* scroll */
+// scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();

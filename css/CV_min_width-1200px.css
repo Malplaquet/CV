@@ -198,7 +198,7 @@ nav a:hover{
   color: rgb(77, 0, 77);
 }
 .bio{
-  margin-left: 4em;
+  margin-left: 3em;
   font-size: 1.2em;
   margin-top: 1em;
 }
@@ -278,8 +278,6 @@ nav a:hover{
   padding: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
 }
 .icon_flex{
   display: flex;
@@ -313,9 +311,10 @@ nav a:hover{
   font-size: 1.2em;
 }
 .img_réal{
-  display: block;
-  height: 17em;
+  /*display: block;*/
   margin-bottom: 0;
+  max-width: auto;
+  max-height: auto;
 }
 .title_projet{
   font-size: 1.5em;
@@ -361,7 +360,7 @@ nav a:hover{
 .img_loisirs{
   display: block;
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 .overlay{
   position: absolute;
@@ -405,6 +404,30 @@ nav a:hover{
 }
 .icon_contacts{
   height: 4em;
+}
+.tooltip_contact{
+  position: relative;
+}
+.tooltip_contact:hover:after, .tooltip_contact:focus:after{
+  content: attr(aria-label);
+  position: absolute;
+  top: -3em;
+  left: 50%;
+  padding: 0 10px;
+  transform: translateX(-50%);
+  z-index: 100;
+  white-space: nowrap;
+  background-color:rgb(77, 0, 77);
+  border-radius: 1em;
+  color: white;
+}
+.tooltip_contact:hover:before,.tooltip_contact:focus:before{
+  content: "▼";
+  position: absolute;
+  top: -2em;
+  left: 50%;
+	transform: translateX(-50%);
+  color: rgb(77, 0, 77);
 }
 .tooltip_phone{
   position: relative;
