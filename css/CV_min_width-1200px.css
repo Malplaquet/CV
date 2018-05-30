@@ -71,10 +71,10 @@ h2{
   background-color: black;
 }
 nav a {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color : white;
   text-decoration: none;
-  height: 50px;
+  height: 3em;
   display: flex;
   align-items: center;
   text-transform: uppercase;
