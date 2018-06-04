@@ -267,6 +267,15 @@ nav a:hover{
 .master{
   font-size: 1.3em;
 }
+.link_memoire{
+  text-decoration: none;
+  color: inherit;
+}
+.link_memoire:hover{
+  font-weight: bold;
+  color: inherit;
+  text-decoration: underline dotted;
+}
 .txt_formation{
   font-size: 1.2em;
 }
